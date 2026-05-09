@@ -7,12 +7,13 @@
 <head>
 
 <meta charset="UTF-8">
-
 <title>Trang chủ</title>
 
 </head>
 
 <body>
+
+	<!-- Page Content -->
 	<div class="container">
 
 		<!-- Heading Row -->
@@ -94,7 +95,6 @@
 
 	</div>
 	<!-- /.container -->
-
 
 </body>
 
