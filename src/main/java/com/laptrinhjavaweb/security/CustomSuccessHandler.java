@@ -37,7 +37,7 @@ public class CustomSuccessHandler extends SimpleUrlAuthenticationSuccessHandler 
 		List<String> roles = SecurityUtils.getAuthorities();
 
 		if (isAdmin(roles)) {
-			url = "/quantri/trang-chu";
+			url = "/quan-tri/trang-chu";
 
 		} else if (isUser(roles)) {
 			url = "/trang-chu";
