@@ -6,7 +6,7 @@ import java.util.List;
 
 public class AbstractDTO<T> {
 	
-	private Long id; 
+	private Long id;
 	private Timestamp createdDate;
 	private Timestamp modifiedDate;
 	private String createdBy;

@@ -12,7 +12,7 @@ import org.springframework.security.web.RedirectStrategy;
 import org.springframework.security.web.authentication.SimpleUrlAuthenticationSuccessHandler;
 import org.springframework.stereotype.Component;
 
-import com.laptrinhjavaweb.util.SecurityUtil;
+import com.laptrinhjavaweb.util.SecurityUtils;
 
 @Component
 public class CustomSuccessHandler extends SimpleUrlAuthenticationSuccessHandler {
@@ -34,7 +34,7 @@ public class CustomSuccessHandler extends SimpleUrlAuthenticationSuccessHandler 
 
 		// if role is ADMIN so rediredt to controller : quantri/trang-chu
 		// if role is USER sorediedt to contrller : /trang-chu
-		List<String> roles = SecurityUtil.getAuthorities();
+		List<String> roles = SecurityUtils.getAuthorities();
 
 		if (isAdmin(roles)) {
 			url = "/quantri/trang-chu";

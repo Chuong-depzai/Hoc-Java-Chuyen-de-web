@@ -30,8 +30,6 @@ public class UserEntity extends BaseEntity{
 	@Column(name = "context", columnDefinition = "TEXT")
 	private String content;
 
-	
-	
 
 	@ManyToMany(fetch = FetchType.LAZY)
 	@JoinTable(name = "user_role", joinColumns = @JoinColumn(name = "userid"), 

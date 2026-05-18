@@ -1,7 +1,6 @@
 package com.laptrinhjavaweb.dto;
 
-public class NewDTO extends AbstractDTO<NewDTO>{
-
+public class NewDTO extends AbstractDTO<NewDTO> {
 	
 	private String title;
 	private String thumbnail;
@@ -9,11 +8,6 @@ public class NewDTO extends AbstractDTO<NewDTO>{
 	private String content;
 	private Long categoryId;
 	private String categoryCode;
-	
-	
-	
-	
-	
 	
 	public String getTitle() {
 		return title;
@@ -51,7 +45,4 @@ public class NewDTO extends AbstractDTO<NewDTO>{
 	public void setCategoryCode(String categoryCode) {
 		this.categoryCode = categoryCode;
 	}
-	
-	
-	
 }

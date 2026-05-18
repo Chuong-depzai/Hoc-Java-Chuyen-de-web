@@ -11,7 +11,6 @@ public class MyUser extends User {
 			boolean credentialsNonExpired, boolean accountNonLocked,
 			Collection<? extends GrantedAuthority> authorities) {
 		super(username, password, enabled, accountNonExpired, credentialsNonExpired, accountNonLocked, authorities);
-		
 	}
 	
 	private String fullName;
@@ -23,7 +22,4 @@ public class MyUser extends User {
 	public void setFullName(String fullName) {
 		this.fullName = fullName;
 	}
-
-	
-
 }
