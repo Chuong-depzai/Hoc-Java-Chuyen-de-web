@@ -14,5 +14,11 @@ public class HomeController {
 	      return mav;
 	   }
 	  
+	  @RequestMapping(value = "/dang-nhap", method = RequestMethod.GET)
+	   public ModelAndView loginPage() {
+	      ModelAndView mav = new ModelAndView("login");
+	      return mav;
+	   }
+	  
 	
 }
